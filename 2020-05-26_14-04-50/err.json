@@ -1,0 +1,117 @@
+[
+  {
+    "Time": "2020-05-27 10:31:38",
+    "UserMessage": "试图恢复UI异常",
+    "innerException": {
+      "ClassName": "System.AggregateException",
+      "Message": "发生一个或多个错误。",
+      "Data": {
+        "System.Object": null
+      },
+      "InnerException": {
+        "ClassName": "System.Net.Http.HttpRequestException",
+        "Message": "发送请求时出错。",
+        "Data": null,
+        "InnerException": {
+          "ClassName": "System.Net.WebException",
+          "Message": "无法连接到远程服务器",
+          "Data": null,
+          "InnerException": {
+            "NativeErrorCode": 10060,
+            "ClassName": "System.Net.Sockets.SocketException",
+            "Message": "由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。",
+            "Data": null,
+            "InnerException": null,
+            "HelpURL": null,
+            "StackTraceString": "   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)\r\n   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)\r\n   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)",
+            "RemoteStackTraceString": null,
+            "RemoteStackIndex": 0,
+            "ExceptionMethod": "8\nInternalEndConnect\nSystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\nSystem.Net.Sockets.Socket\nVoid InternalEndConnect(System.IAsyncResult)",
+            "HResult": -2147467259,
+            "Source": "System",
+            "WatsonBuckets": null
+          },
+          "HelpURL": null,
+          "StackTraceString": "   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)\r\n   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)",
+          "RemoteStackTraceString": null,
+          "RemoteStackIndex": 0,
+          "ExceptionMethod": "8\nEndGetRequestStream\nSystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\nSystem.Net.HttpWebRequest\nSystem.IO.Stream EndGetRequestStream(System.IAsyncResult, System.Net.TransportContext ByRef)",
+          "HResult": -2146233079,
+          "Source": "System",
+          "WatsonBuckets": null
+        },
+        "HelpURL": null,
+        "StackTraceString": null,
+        "RemoteStackTraceString": null,
+        "RemoteStackIndex": 0,
+        "ExceptionMethod": null,
+        "HResult": -2146233088,
+        "Source": null,
+        "WatsonBuckets": null,
+        "SafeSerializationManager": {
+          "m_serializedStates": [
+            {}
+          ]
+        },
+        "CLR_SafeSerializationManager_RealType": "System.Net.Http.HttpRequestException, System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+      },
+      "HelpURL": null,
+      "StackTraceString": "   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\r\n   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\r\n   在 System.Threading.Tasks.Task`1.get_Result()\r\n   在 elevator_dispatch_GUI.WdMain.GetOutput(Boolean isLocal) 位置 C:\\User\\Project\\elevator_dispatch\\elevator_dispatch_GUI\\WdMain.xaml.cs:行号 299\r\n   在 elevator_dispatch_GUI.WdMain.TimerUpdateUI_Tick(Object sender, EventArgs e) 位置 C:\\User\\Project\\elevator_dispatch\\elevator_dispatch_GUI\\WdMain.xaml.cs:行号 238\r\n   在 System.Windows.Threading.DispatcherTimer.FireTick(Object unused)\r\n   在 System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)\r\n   在 System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)",
+      "RemoteStackTraceString": null,
+      "RemoteStackIndex": 0,
+      "ExceptionMethod": "8\nThrowIfExceptional\nmscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\nSystem.Threading.Tasks.Task\nVoid ThrowIfExceptional(Boolean)",
+      "HResult": -2146233088,
+      "Source": "mscorlib",
+      "WatsonBuckets": null,
+      "InnerExceptions": [
+        {
+          "ClassName": "System.Net.Http.HttpRequestException",
+          "Message": "发送请求时出错。",
+          "Data": null,
+          "InnerException": {
+            "ClassName": "System.Net.WebException",
+            "Message": "无法连接到远程服务器",
+            "Data": null,
+            "InnerException": {
+              "NativeErrorCode": 10060,
+              "ClassName": "System.Net.Sockets.SocketException",
+              "Message": "由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。",
+              "Data": null,
+              "InnerException": null,
+              "HelpURL": null,
+              "StackTraceString": "   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)\r\n   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)\r\n   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)",
+              "RemoteStackTraceString": null,
+              "RemoteStackIndex": 0,
+              "ExceptionMethod": "8\nInternalEndConnect\nSystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\nSystem.Net.Sockets.Socket\nVoid InternalEndConnect(System.IAsyncResult)",
+              "HResult": -2147467259,
+              "Source": "System",
+              "WatsonBuckets": null
+            },
+            "HelpURL": null,
+            "StackTraceString": "   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)\r\n   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)",
+            "RemoteStackTraceString": null,
+            "RemoteStackIndex": 0,
+            "ExceptionMethod": "8\nEndGetRequestStream\nSystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\nSystem.Net.HttpWebRequest\nSystem.IO.Stream EndGetRequestStream(System.IAsyncResult, System.Net.TransportContext ByRef)",
+            "HResult": -2146233079,
+            "Source": "System",
+            "WatsonBuckets": null
+          },
+          "HelpURL": null,
+          "StackTraceString": null,
+          "RemoteStackTraceString": null,
+          "RemoteStackIndex": 0,
+          "ExceptionMethod": null,
+          "HResult": -2146233088,
+          "Source": null,
+          "WatsonBuckets": null,
+          "SafeSerializationManager": {
+            "m_serializedStates": [
+              {}
+            ]
+          },
+          "CLR_SafeSerializationManager_RealType": "System.Net.Http.HttpRequestException, System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+        }
+      ]
+    }
+  }
+]
